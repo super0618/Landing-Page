@@ -5,11 +5,6 @@
 	import abstracto from "$lib/assets/abstracto.png";
 	import abstracto_dark from "$lib/assets/abstracto_dark.png";
 	import dxstudio from "$lib/assets/dxstudio.png";
-	import brand_spotify from "$lib/assets/brand_spotify.svg";
-	import brand_google from "$lib/assets/brand_google.svg";
-	import brand_pinterest from "$lib/assets/brand_pinterest.svg";
-	import brand_stripe from "$lib/assets/brand_stripe.svg";
-	import brand_reddit from "$lib/assets/brand_reddit.svg";
 	import { darkMode } from "$lib/store";
 </script>
 
@@ -26,36 +21,6 @@
 		{:else}
 			<img src={abstracto} alt="abstracto" />
 		{/if}
-	</div>
-</div>
-
-{#if $darkMode}
-	<div class="container flex items-center justify-between h-[115px] gap-6 overflow-hidden">
-		<img src={brand_spotify} alt="spotify" />
-		<img src={brand_google} alt="google" />
-		<img src={brand_pinterest} alt="pinterest" />
-		<img src={brand_stripe} alt="stripe" />
-		<img src={brand_reddit} alt="reddit" />
-	</div>
-{/if}
-
-<div class="actionbar">
-	<div class="container py-6 grid md:grid-cols-2 gap-6">
-		<div class="flex">
-			<p class="text-xl text-nowrap w-40">Sort By</p>
-			<input type="text" class="text-sm px-4 py-2 flex-auto dark:bg-[#1C1B21] rounded-full" placeholder="Search" />
-		</div>
-		<div class="flex justify-between md:justify-end gap-6">
-			<div class="flex items-center text-sm gap-2" for="inperson">
-				<input type="checkbox" name="inperson" class="w-4 h-4" />
-				<span class="text-nowrap">In Person</span>
-			</div>
-			<div class="flex items-center text-sm gap-2" for="virtual">
-				<input type="checkbox" name="virtual" class="w-4 h-4" />
-				<span class="text-nowrap">Virtual</span>
-			</div>
-			<input type="date" class="text-sm p-2 dark:bg-[#1C1B21] rounded-md w-40" />
-		</div>
 	</div>
 </div>
 
@@ -108,7 +73,7 @@
 			/>
 		</div>
 		<div class="space-y-4">
-			<div class="text-2xl text-white font-medium text-center mb-6">TOP STORIES</div>
+			<div class="text-2xl font-medium text-center dark:text-white mb-6">TOP STORIES</div>
 			<StoryCard storyImage="/src/lib/assets/img01.png" storyTitle="I&M Bank, Mastercard Partner For A dx Project In Uganda" />
 			<StoryCard storyImage="/src/lib/assets/img02.png" storyTitle="Brands Need AI Tools To Manage Crisis In The Digital Era" />
 			<StoryCard storyImage="/src/lib/assets/img03.png" storyTitle="AFA@10 Cohort Founder Wins At AfricArena" />
