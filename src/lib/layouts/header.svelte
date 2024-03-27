@@ -17,14 +17,14 @@
 	}
 </script>
 
-<div class="relative flex items-center gap-4 h-[90px] px-4 bg-white dark:bg-[#1C1B21] xl:border-none xl:bg-transparent 2xl:px-20 z-50">
+<div class="relative flex items-center gap-4 h-[90px] px-4 bg-white dark:bg-[#1C1B21] dark:xl:bg-transparent xl:border-none xl:bg-transparent 2xl:px-20 z-50">
 	{#if $darkMode}
 		<img src={logo_dark} alt="logo" />
 	{:else}
 		<img src={logo} alt="logo" />
 	{/if}
 	<div
-		class="absolute hidden top-full left-0 right-0 pb-4 bg-white dark:bg-[#1C1B21] border-y dark:border-none shadow-lg xl:bg-transparent xl:pb-0 xl:border-none xl:static xl:flex xl:flex-auto xl:justify-end xl:items-center xl:shadow-none"
+		class="absolute hidden top-full left-0 right-0 pb-4 bg-white dark:bg-[#1C1B21] dark:xl:bg-transparent border-y dark:border-none shadow-lg xl:bg-transparent xl:pb-0 xl:border-none xl:static xl:flex xl:flex-auto xl:justify-end xl:items-center xl:shadow-none"
 		bind:this={menusRef}
 	>
 		<a href="/" class="block px-3 py-2 text-nowrap hover:bg-gray-300 dark:hover:bg-[#131214]">HOME</a>
